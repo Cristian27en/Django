@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Diagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .comment {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Real Madrid Players 2021-2022</h1>
+        <div class="diagram">
+            <h2>Players by Nationality</h2>
+            <img src="data:image/png;base64,{{ diagram_image1 }}" alt="Players by Nationality">
+            <p class="comment">This diagram shows that the dominant nation by far is Spain.</p>
+        </div>
+        <hr>
+        <div class="diagram">
+            <h2>Spanish Players vs Other Players</h2>
+            <img src="data:image/png;base64,{{ diagram_image2 }}" alt="Spanish Players vs Other Players">
+            <p class="comment">This diagram shows that the dominant, Spain compared to other nationalities in the team.</p>
+        </div>
+        <hr>
+        <div class="diagram">
+            <h2>Spanish Players Minutes vs Other Players Minutes</h2>
+            <img src="data:image/png;base64,{{ diagram_image3 }}" alt="Spanish Players Minutes vs Other Players Minutes">
+            <p class="comment">This diagram shows total minutes by Spanish players and total minutes by the rest of the players.</p>
+        </div>
+    </div>
+</body>
+</html>
